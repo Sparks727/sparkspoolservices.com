@@ -49,14 +49,12 @@ export function Navigation() {
                     Deep Scrub Cleaning
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="/service-areas" className="w-full">
-                    Service Areas
-                  </Link>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
+            <Link href="/service-areas" className="text-gray-700 hover:text-primary transition-colors">
+              Service Areas
+            </Link>
             <Link href="/veteran-owned" className="text-gray-700 hover:text-primary transition-colors">
               Veteran-Owned
             </Link>
@@ -112,7 +110,7 @@ export function Navigation() {
               </Link>
               <Link
                 href="/service-areas"
-                className="block px-6 py-3 text-gray-600 hover:text-primary transition-colors min-h-[44px] flex items-center"
+                className="block px-3 py-3 text-gray-700 hover:text-primary transition-colors min-h-[44px] flex items-center"
                 onClick={() => setIsOpen(false)}
               >
                 Service Areas
