@@ -26,14 +26,14 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white mb-6 leading-tight tracking-wide">
-            Pool Cleaning Services in
+            Sparks Pool Services:
             <br />
-            <span className="text-primary">Largo, Clearwater & Seminole, FL</span>
+            <span className="text-primary">The Best Pool Cleaning Experience</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-            Veteran-owned pool service company serving Pinellas County with crystal clear pools and military precision. 5-star rated pool cleaning in Largo, Clearwater, Seminole, Pinellas Park, St. Petersburg, and Indian Rocks Beach.
+            Sparks Pool Services provides professional, veteran-owned pool cleaning and maintenance in Pinellas County. Our military precision ensures crystal-clear pools and reliable, top-notch service for residential and commercial customers.
           </p>
 
           {/* Tagline */}
