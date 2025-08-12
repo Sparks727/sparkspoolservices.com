@@ -47,7 +47,7 @@ export function VeteranCTA() {
                   className="border-white text-white hover:bg-white hover:text-slate-900 bg-transparent"
                   asChild
                 >
-                  <Link href="tel:727-234-4023">Call Us Today</Link>
+                  <Link href="/contact">Get Quote</Link>
                 </Button>
               </CardContent>
             </Card>

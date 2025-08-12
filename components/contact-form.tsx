@@ -136,7 +136,7 @@ ${formData.message}
               required
               value={formData.email}
               onChange={handleChange}
-              placeholder="your.email@example.com"
+                              placeholder="your.email@gmail.com"
             />
           </div>
 
