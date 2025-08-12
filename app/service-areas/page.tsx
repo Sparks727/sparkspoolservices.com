@@ -2,6 +2,8 @@ import { Metadata } from "next"
 import { Shield, Phone, Mail, MapPin, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -50,9 +52,11 @@ const serviceAreas = [
 
 export default function ServiceAreasPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cyan-50 to-white">
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-br from-primary/10 via-white to-cyan-50">
+    <main>
+      <Navigation />
+            <div className="min-h-screen bg-gradient-to-br from-primary/5 to-white">
+        {/* Hero Section */}
+        <section className="relative pt-20 pb-16 bg-gradient-to-br from-primary/10 via-white to-primary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex justify-center mb-6">
@@ -216,6 +220,8 @@ export default function ServiceAreasPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      <Footer />
+    </main>
   )
 }
