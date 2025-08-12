@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Shield, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react"
+import { Shield, Phone, Mail, MapPin, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -25,12 +25,6 @@ export function Footer() {
             <div className="flex space-x-3 pt-2">
               <a href="#" className="text-gray-400 hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -72,7 +66,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>sparkspoolservices@gmail.com</span>
+                <span>sparkspoolservices1@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-primary" />
@@ -89,7 +83,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-gray-400">© 2024 Sparks Pool Services. All rights reserved.</p>
+            <p className="text-sm text-gray-400">© 2025 Sparks Pool Services. All rights reserved.</p>
             <div className="flex items-center space-x-4 text-sm text-gray-400">
               <span>Licensed & Insured</span>
               <span>•</span>

@@ -212,8 +212,8 @@ export default function ServiceAreasPage() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary"
+              variant="secondary"
+              className="text-lg px-8 py-6"
             >
               <Link href="/contact">Get Free Quote</Link>
             </Button>

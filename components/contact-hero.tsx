@@ -28,7 +28,7 @@ export function ContactHero() {
             <div className="flex items-center justify-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg p-4">
               <Mail className="h-6 w-6 text-primary" />
               <div className="text-left">
-                <p className="font-semibold text-gray-900">sparkspoolservices@gmail.com</p>
+                <p className="font-semibold text-gray-900">sparkspoolservices1@gmail.com</p>
                 <p className="text-sm text-gray-600">Email Us</p>
               </div>
             </div>

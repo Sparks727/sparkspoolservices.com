@@ -37,7 +37,7 @@ Message:
 ${formData.message}
       `.trim()
 
-      const mailtoLink = `mailto:sparkspoolservices@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      const mailtoLink = `mailto:sparkspoolservices1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
       // Open email client
       window.location.href = mailtoLink
