@@ -28,7 +28,7 @@ export function HeroSection() {
           <h1 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white mb-6 leading-tight tracking-wide">
             Crystal Clear Pools,
             <br />
-            <span className="text-accent">Veteran Strong</span> Service
+            <span className="text-primary">Veteran Strong</span> Service
           </h1>
 
           {/* Subheading */}

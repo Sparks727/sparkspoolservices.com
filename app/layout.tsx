@@ -21,6 +21,14 @@ export const metadata: Metadata = {
   description:
     "Professional pool cleaning services for residential and commercial clients. Veteran-owned business serving with precision, integrity, and care.",
   generator: "v0.dev",
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-filled.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({
