@@ -54,6 +54,11 @@ export function Footer() {
                   Deep Scrub Cleaning
                 </Link>
               </li>
+              <li>
+                <Link href="/service-areas" className="hover:text-primary transition-colors">
+                  Service Areas
+                </Link>
+              </li>
             </ul>
           </div>
 
