@@ -117,7 +117,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   /* Added custom font variables */
-  --font-sans: var(--font-source-sans);
+  --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
   /* Added veteran accent color */
   --color-veteran-accent: var(--veteran-accent);
