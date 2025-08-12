@@ -5,7 +5,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Menu, X, ChevronDown } from "lucide-react"
-import Image from "next/image"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,12 +15,10 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <Image 
+            <img 
               src="/logo.png" 
               alt="Sparks Pool Services Logo" 
-              width={40} 
-              height={40} 
-              className="h-8 w-8 sm:h-10 sm:w-10"
+              className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
             />
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg sm:text-xl text-gray-900">Sparks Pool Services</span>

@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Shield, Phone, Mail, MapPin, Facebook } from "lucide-react"
-import Image from "next/image"
 
 export function Footer() {
   return (
@@ -10,12 +9,10 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <Image 
+              <img 
                 src="/logo.png" 
                 alt="Sparks Pool Services Logo" 
-                width={32} 
-                height={32} 
-                className="h-8 w-8"
+                className="h-8 w-8 object-contain"
               />
               <div>
                 <h3 className="font-serif font-bold text-xl">Sparks Pool Services</h3>

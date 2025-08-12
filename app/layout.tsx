@@ -17,9 +17,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Pool Cleaning Services in Largo, Clearwater, Seminole, FL | Sparks Pool Services",
+  title: "Sparks Pool Services: The Best Pool Cleaning Experience",
   description:
-    "Professional pool cleaning services in Largo, Clearwater, Seminole, Pinellas Park, St. Petersburg, and Indian Rocks Beach, FL. Veteran-owned pool service company with 5-star ratings. Call (727) 234-4023 for free quotes.",
+    "Sparks Pool Services provides professional, veteran-owned pool cleaning and maintenance in Pinellas County. Our military precision ensures crystal-clear pools and reliable, top-notch service for residential and commercial customers.",
   keywords: "pool cleaning largo fl, pool service clearwater florida, pool maintenance seminole fl, pool cleaning pinellas park, pool service st petersburg fl, veteran owned pool service, crystal clear pools florida",
   generator: "v0.dev",
   icons: {
