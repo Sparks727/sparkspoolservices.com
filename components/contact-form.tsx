@@ -24,37 +24,44 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus("idle")
 
     try {
-      const subject = `Pool Service Quote Request - ${formData.service || "General"}`
-      const body = `
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Service Requested: ${formData.service || "Not specified"}
+      const formDataToSend = new FormData()
+      formDataToSend.append('access_key', '79232413-c689-4c4c-8b77-32104355c108')
+      formDataToSend.append('name', formData.name)
+      formDataToSend.append('email', formData.email)
+      formDataToSend.append('phone', formData.phone)
+      formDataToSend.append('service', formData.service || 'Not specified')
+      formDataToSend.append('message', formData.message)
+      formDataToSend.append('subject', `Pool Service Quote Request - ${formData.service || "General"}`)
+      formDataToSend.append('from_name', 'Sparks Pool Services Website')
 
-Message:
-${formData.message}
-      `.trim()
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSend
+      })
 
-      const mailtoLink = `mailto:sparkspoolservices1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      const data = await response.json()
 
-      // Open email client
-      window.location.href = mailtoLink
-
-      setSubmitStatus("success")
-
-      // Reset form after successful submission
-      setTimeout(() => {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          service: "",
-          message: "",
-        })
-        setSubmitStatus("idle")
-      }, 3000)
+      if (data.success) {
+        setSubmitStatus("success")
+        
+        // Reset form after successful submission
+        setTimeout(() => {
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            service: "",
+            message: "",
+          })
+          setSubmitStatus("idle")
+        }, 3000)
+      } else {
+        console.error("Form submission error:", data)
+        setSubmitStatus("error")
+      }
     } catch (error) {
       console.error("Error submitting form:", error)
       setSubmitStatus("error")
@@ -81,14 +88,15 @@ ${formData.message}
       <CardContent>
         {submitStatus === "success" && (
           <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-md">
-            <p className="text-green-800">Thank you! Your quote request has been sent successfully.</p>
+            <p className="text-green-800 font-semibold">Thank you! Your quote request has been sent successfully.</p>
+            <p className="text-green-700 text-sm mt-1">We'll get back to you within 24 hours with your personalized quote.</p>
           </div>
         )}
 
         {submitStatus === "error" && (
           <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-md">
             <p className="text-red-800">
-              There was an error sending your request. Please try again or call us directly.
+              There was an error sending your request. Please try again or call us directly at (727) 234-4023.
             </p>
           </div>
         )}
