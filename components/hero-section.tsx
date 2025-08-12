@@ -26,20 +26,20 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white mb-6 leading-tight tracking-wide">
-            Crystal Clear Pools,
+            Pool Cleaning Services in
             <br />
-            <span className="text-primary">Veteran Strong</span> Service
+            <span className="text-primary">Largo, Clearwater & Seminole, FL</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-            Serving homes & businesses with precision, integrity, and care. Military discipline meets pool perfection.
+            Veteran-owned pool service company serving Pinellas County with crystal clear pools and military precision. 5-star rated pool cleaning in Largo, Clearwater, Seminole, Pinellas Park, St. Petersburg, and Indian Rocks Beach.
           </p>
 
           {/* Tagline */}
           <div className="flex items-center justify-center space-x-2 mb-10 px-4">
             <Droplets className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-            <span className="text-sm sm:text-lg font-medium text-white tracking-wider">PRECISION • CLARITY • CARE</span>
+            <span className="text-sm sm:text-lg font-medium text-white tracking-wider">SERVING PINELLAS COUNTY • VETERAN OWNED • 5-STAR RATED</span>
             <Droplets className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
           </div>
 
@@ -49,7 +49,7 @@ export function HeroSection() {
               size="lg"
               className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-primary hover:bg-primary/90 w-full sm:w-auto min-h-[48px]"
             >
-              <Link href="tel:727-234-4023">Call Us Today</Link>
+              <Link href="tel:727-234-4023">Get Free Pool Cleaning Quote</Link>
             </Button>
             <Button
               asChild
@@ -64,15 +64,15 @@ export function HeroSection() {
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-white/80 px-4">
             <div className="flex items-center space-x-2">
               <Star className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400 fill-current" />
-              <span className="text-sm sm:text-base">5-Star Service</span>
+              <span className="text-sm sm:text-base">5-Star Pool Service</span>
             </div>
             <div className="flex items-center space-x-2">
               <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-              <span className="text-sm sm:text-base">Fully Licensed & Insured</span>
+              <span className="text-sm sm:text-base">Serving Pinellas County</span>
             </div>
             <div className="flex items-center space-x-2">
               <Droplets className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
-              <span className="text-sm sm:text-base">Eco-Friendly Solutions</span>
+              <span className="text-sm sm:text-base">Free Estimates</span>
             </div>
           </div>
         </div>

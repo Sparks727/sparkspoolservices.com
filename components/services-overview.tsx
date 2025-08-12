@@ -38,10 +38,9 @@ export function ServicesOverview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-serif font-bold text-4xl sm:text-5xl text-gray-900 mb-6">Our Pool Services</h2>
+          <h2 className="font-serif font-bold text-4xl sm:text-5xl text-gray-900 mb-6">Pool Services in Pinellas County</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From routine maintenance to deep cleaning, we bring military precision to every pool we service. Choose the
-            service that fits your needs.
+            From routine maintenance to deep cleaning, we bring military precision to every pool in Largo, Clearwater, Seminole, and surrounding areas. Choose the service that fits your needs.
           </p>
         </div>
 
@@ -81,9 +80,9 @@ export function ServicesOverview() {
 
         {/* Bottom CTA */}
         <div className="text-center">
-          <p className="text-lg text-muted-foreground mb-6">Not sure which service you need? We're here to help.</p>
+          <p className="text-lg text-muted-foreground mb-6">Serving Largo, Clearwater, Seminole, Pinellas Park, St. Petersburg, and Indian Rocks Beach. Not sure which service you need? We're here to help.</p>
           <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
-            <Link href="/contact">Get Free Consultation</Link>
+            <Link href="/contact">Get Free Pool Cleaning Quote</Link>
           </Button>
         </div>
       </div>
