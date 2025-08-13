@@ -34,7 +34,7 @@ export function HeroSection() {
           {/* Tagline */}
           <div className="flex items-center justify-center space-x-2 mb-10 px-4">
             <Droplets className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-            <span className="text-sm sm:text-lg font-medium text-white tracking-wider">RESIDENTIAL CLEANING • COMMERCIAL SERVICES</span>
+            <span className="text-sm sm:text-lg font-medium text-white tracking-wider">RESIDENTIAL • COMMERCIAL</span>
             <Droplets className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
           </div>
 
