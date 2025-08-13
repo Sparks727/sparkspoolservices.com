@@ -26,9 +26,7 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <h1 className="font-serif font-bold text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white mb-6 leading-tight tracking-wide">
-            Sparks Pool Services:
-            <br />
-            <span className="text-primary">The Best Pool Cleaning Experience</span>
+            The Best <span className="text-primary">Pool Cleaning</span> Experience
           </h1>
 
 
