@@ -15,9 +15,9 @@ export function ScrubCleaningProcess() {
     },
     {
       icon: Brush,
-      title: "Manual Scrubbing",
+      title: "Professional Scrub Gear & Scuba Cleaning",
       description:
-        "Intensive hand scrubbing of all surfaces using professional brushes and specialized cleaning agents. Our technicians use scuba gear for thorough underwater cleaning of pool floors and deep areas.",
+        "Our technicians don professional scrub gear and scuba equipment to access every surface of your pool. This hands-on approach ensures we reach areas that automated systems miss, providing the most thorough cleaning possible.",
     },
     {
       icon: Sparkles,
@@ -30,9 +30,9 @@ export function ScrubCleaningProcess() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-4">Our Proven 4-Step Process</h2>
+          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-4">Our Detailed 4-Step Scrub Process</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-sans">
-            From green swamp to sparkling oasis - our systematic approach ensures complete pool restoration every time.
+            The most comprehensive pool cleaning method available. Our technicians use professional scrub gear and scuba equipment to ensure every inch of your pool receives attention.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export function ScrubCleaningProcess() {
             </div>
             <div>
               <div className="text-3xl font-bold text-cyan-600 mb-2 font-serif">100%</div>
-              <div className="text-slate-600 font-sans">Algae Elimination</div>
+              <div className="text-slate-600 font-sans">Surface Coverage</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-cyan-600 mb-2 font-serif">30-Day</div>

@@ -15,8 +15,7 @@ export function ScrubCleaningHero() {
               Professional Scrub Cleaning Services
             </h1>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed font-sans">
-              Transform your neglected pool with our intensive scrub cleaning service. We restore pools from green to
-              pristine, removing years of buildup and algae growth.
+              The most detailed way to clean your pool. Our technicians use professional scrub gear and scuba equipment to reach every inch of your pool, ensuring complete removal of algae, scale, and years of buildup that regular cleaning can't touch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3 font-sans">

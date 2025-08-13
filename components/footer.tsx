@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/logo.png" 
+                src="/logo2.png" 
                 alt="Sparks Pool Services Logo" 
                 className="h-8 w-8 object-contain"
               />
