@@ -35,11 +35,11 @@ export function VeteranHero() {
               <div className="flex items-center gap-6 text-sm text-slate-400">
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                  <span>10+ Years Military Service</span>
+                  <span>Military Service</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="w-5 h-5 text-cyan-400" />
-                  <span>Honorable Discharge</span>
+                  <span>Local Business</span>
                 </div>
               </div>
             </div>

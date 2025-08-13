@@ -21,7 +21,7 @@ export function VeteranStory() {
             <div className="space-y-6">
               <h3 className="font-serif text-3xl font-bold text-slate-900">Military Foundation</h3>
               <p className="text-slate-600 leading-relaxed">
-                David Sparks proudly served in the United States Army for over a decade, where he developed the core
+                David Sparks proudly served in the United States Army where he developed the core
                 values that define our business today: integrity, excellence, and selfless service.
               </p>
               <p className="text-slate-600 leading-relaxed">
@@ -30,14 +30,7 @@ export function VeteranStory() {
               </p>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 text-sm text-slate-600">
-                  <Calendar className="w-5 h-5 text-cyan-600" />
-                  <span>2008-2018 Active Duty</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm text-slate-600">
-                  <MapPin className="w-5 h-5 text-cyan-600" />
-                  <span>Multiple Deployments</span>
-                </div>
+
                 <div className="flex items-center gap-3 text-sm text-slate-600">
                   <Users className="w-5 h-5 text-cyan-600" />
                   <span>Leadership Roles</span>
@@ -55,12 +48,7 @@ export function VeteranStory() {
                 alt="David Sparks in Military Uniform"
                 className="w-full rounded-lg shadow-lg"
               />
-              <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
-                <div className="text-center">
-                  <div className="font-bold text-2xl text-slate-900">10+</div>
-                  <div className="text-sm text-slate-600">Years of Service</div>
-                </div>
-              </div>
+
             </div>
           </div>
 

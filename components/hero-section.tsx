@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Veteran Badge */}
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-6 pt-8 sm:pt-12">
             <Badge
               variant="outline"
               className="bg-white/10 border-white/20 text-white backdrop-blur-sm px-4 py-2 text-sm sm:text-base"
@@ -31,10 +31,7 @@ export function HeroSection() {
             <span className="text-primary">The Best Pool Cleaning Experience</span>
           </h1>
 
-          {/* Subheading */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-            Sparks Pool Services provides professional, veteran-owned pool cleaning and maintenance in Pinellas County. Our military precision ensures crystal-clear pools and reliable, top-notch service for residential and commercial customers.
-          </p>
+
 
           {/* Tagline */}
           <div className="flex items-center justify-center space-x-2 mb-10 px-4">

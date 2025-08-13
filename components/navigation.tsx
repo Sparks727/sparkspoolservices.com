@@ -63,7 +63,7 @@ export function Navigation() {
               Veteran-Owned
             </Link>
             <Button asChild>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">Free Quote</Link>
             </Button>
             <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
               <Link href="tel:727-234-4023">Call Us Today</Link>
@@ -129,7 +129,7 @@ export function Navigation() {
               <div className="px-3 py-2">
                 <Button asChild className="w-full min-h-[48px]">
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
-                    Contact
+                    Free Quote
                   </Link>
                 </Button>
               </div>
