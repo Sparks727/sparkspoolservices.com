@@ -58,8 +58,8 @@ export function CommercialHero() {
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">50+</div>
-                <div className="text-sm text-muted-foreground">Commercial Clients</div>
+                <div className="text-2xl font-bold text-primary">Commercial</div>
+                <div className="text-sm text-muted-foreground">Pool Management</div>
               </div>
             </div>
           </div>

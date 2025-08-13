@@ -58,8 +58,8 @@ export function ResidentialHero() {
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Happy Families</div>
+                <div className="text-2xl font-bold text-primary">Residential</div>
+                <div className="text-sm text-muted-foreground">Pool Care</div>
               </div>
             </div>
           </div>

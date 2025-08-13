@@ -47,8 +47,8 @@ export function ScrubCleaningHero() {
               className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold text-cyan-600 font-serif">100%</div>
-              <div className="text-sm text-slate-600 font-sans">Algae Removal</div>
+              <div className="text-2xl font-bold text-cyan-600 font-serif">Professional</div>
+              <div className="text-sm text-slate-600 font-sans">Scrub Cleaning</div>
             </div>
           </div>
         </div>

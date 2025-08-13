@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   generator: "v0.dev",
   icons: {
     icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
       { url: '/favicon3.ico', type: 'image/x-icon' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon-filled.svg', type: 'image/svg+xml' },
