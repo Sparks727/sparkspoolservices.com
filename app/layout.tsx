@@ -37,13 +37,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
-  icons: {
-    icon: [
-      { url: '/logo1.ico?v=2', type: 'image/x-icon' },
-      { url: '/logo1.webp?v=2', type: 'image/webp' },
-    ],
-    apple: '/logo1.webp?v=2',
-  },
+          icons: {
+          icon: [
+            { url: '/logo1.ico?v=2', type: 'image/x-icon' },
+            { url: '/logo1.png?v=2', type: 'image/png' },
+          ],
+          apple: '/logo1.png?v=2',
+        },
   manifest: '/manifest.json',
   robots: {
     index: true,

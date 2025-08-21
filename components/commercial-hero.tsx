@@ -49,14 +49,11 @@ export function CommercialHero() {
           {/* Image */}
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              <picture>
-                <source srcSet="/commercial.webp?v=2" type="image/webp" />
-                <img
-                  src="/commercial.webp?v=2"
-                  alt="Professional commercial pool facility with pristine maintenance"
-                  className="w-full h-full object-cover"
-                />
-              </picture>
+              <img
+                src="/commercial.jpg?v=2"
+                alt="Professional commercial pool facility with pristine maintenance"
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100">

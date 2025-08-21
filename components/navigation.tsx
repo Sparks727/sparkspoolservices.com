@@ -15,14 +15,11 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <picture>
-              <source srcSet="/logo1.webp?v=2" type="image/webp" />
-              <img 
-                src="/logo1.png?v=2"
-                alt="Sparks Pool Services Logo"
-                className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
-              />
-            </picture>
+            <img 
+              src="/logo1.png?v=2"
+              alt="Sparks Pool Services Logo"
+              className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
+            />
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg sm:text-xl text-gray-900">Sparks Pool Services</span>
               <span className="text-xs text-muted-foreground -mt-1">Veteran-Owned</span>
