@@ -39,10 +39,10 @@ export const metadata: Metadata = {
   },
           icons: {
           icon: [
-            { url: '/logo1.ico?v=2', type: 'image/x-icon' },
-            { url: '/logo1.png?v=2', type: 'image/png' },
+            { url: '/logo1.ico', type: 'image/x-icon' },
+            { url: '/logo1.png', type: 'image/png' },
           ],
-          apple: '/logo1.png?v=2',
+          apple: '/logo1.png',
         },
   manifest: '/manifest.json',
   robots: {

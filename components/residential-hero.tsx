@@ -50,7 +50,7 @@ export function ResidentialHero() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                                                    <img
-                src="/residential.png?v=2"
+                src="/residential.png"
                 alt="Beautiful residential pool with family enjoying clean water"
                 className="w-full h-full object-cover"
               />

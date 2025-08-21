@@ -50,7 +50,7 @@ export function CommercialHero() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/commercial.jpg?v=2"
+                src="/commercial.jpg"
                 alt="Professional commercial pool facility with pristine maintenance"
                 className="w-full h-full object-cover"
               />

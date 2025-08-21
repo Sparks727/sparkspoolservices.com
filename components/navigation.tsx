@@ -10,13 +10,13 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 safe-top">
+    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <img 
-              src="/logo1.png?v=2"
+              src="/logo1.png"
               alt="Sparks Pool Services Logo"
               className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
             />

@@ -49,7 +49,7 @@ export function ScrubCleaningHero() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
                                                    <img
-                src="/scuba-clean.png?v=2"
+                src="/scuba-clean.png"
                 alt="Professional pool scrub cleaning in progress"
                 className="w-full h-full object-cover"
               />
