@@ -55,9 +55,6 @@ export function CommercialHero() {
                   src="/commercial.webp?v=2"
                   alt="Professional commercial pool facility with pristine maintenance"
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
                 />
               </picture>
             </div>
