@@ -49,11 +49,17 @@ export function ResidentialHero() {
           {/* Image */}
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="/residential.webp"
-                alt="Beautiful residential pool with family enjoying clean water"
-                className="w-full h-full object-cover"
-              />
+                                     <picture>
+                         <source srcSet="/residential.webp?v=2" type="image/webp" />
+                         <img
+                           src="/residential.webp?v=2"
+                           alt="Beautiful residential pool with family enjoying clean water"
+                           className="w-full h-full object-cover"
+                           onError={(e) => {
+                             e.currentTarget.style.display = 'none';
+                           }}
+                         />
+                       </picture>
             </div>
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
