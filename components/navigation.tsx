@@ -15,17 +15,14 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div 
-              className="h-8 w-8 sm:h-10 sm:w-10 bg-cover bg-center"
-              style={{
-                backgroundImage: 'url(/favicon-filled.svg)',
-                backgroundSize: 'contain',
-                backgroundRepeat: 'no-repeat'
-              }}
+            <img 
+              src="/logo1.webp"
+              alt="Sparks Pool Services Logo"
+              className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
             />
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg sm:text-xl text-gray-900">Sparks Pool Services</span>
-              <span className="text-xs text-muted-foreground -mt-1 hidden sm:block">Veteran-Owned</span>
+              <span className="text-xs text-muted-foreground -mt-1">Veteran-Owned</span>
             </div>
           </Link>
 
@@ -62,9 +59,6 @@ export function Navigation() {
             <Link href="/service-areas" className="text-gray-700 hover:text-primary transition-colors">
               Service Areas
             </Link>
-            <Link href="/veteran-owned" className="text-gray-700 hover:text-primary transition-colors">
-              Veteran-Owned
-            </Link>
             <Button asChild>
               <Link href="/contact">Free Quote</Link>
             </Button>
@@ -75,14 +69,22 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)} className="min-h-[44px] min-w-[44px]">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={() => setIsOpen(!isOpen)} 
+              className="min-h-[44px] min-w-[44px]"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+            >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
         {isOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
               <Link
                 href="/"
@@ -121,13 +123,6 @@ export function Navigation() {
                 onClick={() => setIsOpen(false)}
               >
                 Service Areas
-              </Link>
-              <Link
-                href="/veteran-owned"
-                className="block px-3 py-3 text-gray-700 hover:text-primary transition-colors min-h-[44px] flex items-center"
-                onClick={() => setIsOpen(false)}
-              >
-                Veteran-Owned
               </Link>
               <div className="px-3 py-2">
                 <Button asChild className="w-full min-h-[48px]">

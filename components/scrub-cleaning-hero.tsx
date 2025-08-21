@@ -1,54 +1,65 @@
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { Sparkles, Droplets, Shield } from "lucide-react"
+import Link from "next/link"
 
 export function ScrubCleaningHero() {
   return (
-    <section className="relative bg-gradient-to-br from-cyan-50 to-blue-50 py-20">
-      <div className="container mx-auto px-4">
+    <section className="relative pt-16 pb-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <Sparkles className="h-6 w-6 text-cyan-600" />
-              <span className="text-cyan-600 font-semibold font-sans">Deep Pool Restoration</span>
-            </div>
-            <h1 className="text-5xl lg:text-6xl font-serif font-bold text-slate-900 mb-6 leading-tight">
-              Professional Scrub Cleaning Services
-            </h1>
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed font-sans">
+            <Badge variant="outline" className="mb-6 bg-white/80 border-primary/20 text-primary">
+              <Sparkles className="h-4 w-4 mr-2" />
+              Deep Pool Restoration
+            </Badge>
+
+                                <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
+                      Professional <span className="text-primary">Deep Pool Restoration</span> Services
+                    </h1>
+
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               The most detailed way to clean your pool. Our technicians use professional scrub gear and scuba equipment to reach every inch of your pool, ensuring complete removal of algae, scale, and years of buildup that regular cleaning can't touch.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3 font-sans">
-                Get Free Assessment
+
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+              <Button asChild size="lg" className="text-lg px-8 py-6">
+                <Link href="/contact">Get Free Assessment</Link>
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-cyan-600 text-cyan-600 hover:bg-cyan-50 px-8 py-3 font-sans bg-transparent"
-              >
-                View Before & After
+              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
+                <Link href="#pricing">See Pricing</Link>
               </Button>
             </div>
-            <div className="flex items-center gap-6 text-sm text-slate-600 font-sans">
-              <div className="flex items-center gap-2">
-                <Droplets className="h-4 w-4 text-cyan-600" />
-                <span>Algae Removal</span>
+
+            {/* Trust Indicators */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-8 text-muted-foreground">
+              <div className="flex items-center space-x-2">
+                <Droplets className="h-5 w-5 text-primary" />
+                <span>Pool Restoration</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Shield className="h-4 w-4 text-cyan-600" />
-                <span>Surface Restoration</span>
+              <div className="flex items-center space-x-2">
+                <Shield className="h-5 w-5 text-primary" />
+                <span>Fully Licensed & Insured</span>
               </div>
             </div>
           </div>
+
+          {/* Image */}
           <div className="relative">
-            <img
-              src="/pool-scrub-cleaning.png"
-              alt="Professional pool scrub cleaning in progress"
-              className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
-            />
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold text-cyan-600 font-serif">Professional</div>
-              <div className="text-sm text-slate-600 font-sans">Scrub Cleaning</div>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="/scuba-sclean.webp"
+                alt="Professional pool scrub cleaning in progress"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Floating Badge */}
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">Professional</div>
+                <div className="text-sm text-muted-foreground">Scrub Cleaning</div>
+              </div>
             </div>
           </div>
         </div>

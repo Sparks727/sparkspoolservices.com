@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
+import { StructuredData } from "@/components/structured-data"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -17,21 +18,44 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Sparks Pool Services: The Best Pool Cleaning Experience",
+  title: {
+    default: "Sparks Pool Services | Professional Pool Cleaning Pinellas County FL",
+    template: "%s | Sparks Pool Services"
+  },
   description:
-    "Sparks Pool Services provides professional, veteran-owned pool cleaning and maintenance in Pinellas County. Our military precision ensures crystal-clear pools and reliable, top-notch service for residential and commercial customers.",
-  keywords: "pool cleaning largo fl, pool service clearwater florida, pool maintenance seminole fl, pool cleaning pinellas park, pool service st petersburg fl, veteran owned pool service, crystal clear pools florida",
-  generator: "v0.dev",
+    "Veteran-owned pool cleaning services in Pinellas County, Florida. Professional residential & commercial pool maintenance, deep scrub cleaning. Licensed, insured, 24/7 emergency response. Free quotes!",
+  keywords: "pool cleaning pinellas county, pool service florida, veteran owned pool service, residential pool cleaning, commercial pool maintenance, deep scrub cleaning, pool cleaning largo, pool cleaning clearwater, pool cleaning st petersburg, pool cleaning seminole, pool cleaning pinellas park",
+  authors: [{ name: "Sparks Pool Services" }],
+  creator: "Sparks Pool Services",
+  publisher: "Sparks Pool Services",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://sparkspoolservices.com'),
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
-      { url: '/favicon-filled.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/favicon3.ico', type: 'image/x-icon' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/logo1.ico', type: 'image/x-icon' },
+      { url: '/logo1.webp', type: 'image/webp' },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: '/logo1.webp',
   },
   manifest: '/manifest.json',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function RootLayout({
@@ -42,6 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} antialiased`}>
       <head>
+        <StructuredData />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WLPNXGB80"></script>
         <script
@@ -55,7 +80,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded z-50">
+          Skip to main content
+        </a>
+        {children}
+      </body>
     </html>
   )
 }

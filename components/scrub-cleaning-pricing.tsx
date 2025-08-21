@@ -4,9 +4,9 @@ import { Check, Star } from "lucide-react"
 export function ScrubCleaningPricing() {
   const packages = [
     {
-      name: "Basic Scrub",
-      price: "$299",
-      description: "For lightly neglected pools with minor algae growth",
+      name: "One Time Clean",
+      price: "$300",
+      description: "Perfect for immediate pool issues or special events",
       features: [
         "Complete pool assessment",
         "Manual surface scrubbing",
@@ -18,11 +18,15 @@ export function ScrubCleaningPricing() {
       popular: false,
     },
     {
-      name: "Deep Clean",
-      price: "$499",
-      description: "For moderately neglected pools with significant algae",
+      name: "Bi-Weekly Clean",
+      price: "$400",
+      description: "Twice a month cleaning service",
       features: [
-        "Everything in Basic Scrub",
+        "Complete pool assessment",
+        "Manual surface scrubbing",
+        "Basic chemical treatment",
+        "Debris removal",
+        "Water testing & balancing",
         "Intensive algae treatment",
         "Filter system cleaning",
         "Stain removal treatment",
@@ -33,11 +37,19 @@ export function ScrubCleaningPricing() {
       popular: true,
     },
     {
-      name: "Full Restoration",
-      price: "$799",
-      description: "For severely neglected pools requiring complete recovery",
+      name: "Monthly Service",
+      price: "$600",
+      description: "Weekly cleanings throughout the month",
       features: [
-        "Everything in Deep Clean",
+        "Complete pool assessment",
+        "Manual surface scrubbing",
+        "Basic chemical treatment",
+        "Debris removal",
+        "Water testing & balancing",
+        "Intensive algae treatment",
+        "Filter system cleaning",
+        "Stain removal treatment",
+        "Equipment inspection",
         "Multiple treatment sessions",
         "Acid washing (if needed)",
         "Equipment repairs/replacement",
@@ -50,13 +62,12 @@ export function ScrubCleaningPricing() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section id="pricing" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-4">Scrub Cleaning Packages</h2>
+          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-4">Scrub Cleaning Service Pricing</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-sans">
-            Choose the right level of restoration for your pool's condition. All packages include our satisfaction
-            guarantee.
+            Choose the service frequency that works best for your pool's needs. All services include our satisfaction guarantee.
           </p>
         </div>
 

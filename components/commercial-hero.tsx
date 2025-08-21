@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function CommercialHero() {
   return (
-    <section className="relative pt-16 pb-20 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section className="relative pt-16 pb-20 bg-gradient-to-br from-blue-50 to-cyan-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -16,7 +16,7 @@ export function CommercialHero() {
             </Badge>
 
             <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
-              Professional Pool Care for <span className="text-primary">High-Volume</span> Demands
+              Professional <span className="text-primary">Commercial Pool Cleaning</span> Services
             </h1>
 
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -29,7 +29,7 @@ export function CommercialHero() {
                 <Link href="/contact">Request Proposal</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
-                <Link href="#services">View Services</Link>
+                <Link href="#pricing">See Pricing</Link>
               </Button>
             </div>
 
@@ -41,7 +41,7 @@ export function CommercialHero() {
               </div>
               <div className="flex items-center space-x-2">
                 <Shield className="h-5 w-5 text-primary" />
-                <span>Compliance Reporting</span>
+                <span>Fully Licensed & Insured</span>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ export function CommercialHero() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/commercial-pool-facility.png"
+                src="/commercial.webp"
                 alt="Professional commercial pool facility with pristine maintenance"
                 className="w-full h-full object-cover"
               />

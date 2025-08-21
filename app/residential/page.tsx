@@ -2,22 +2,24 @@ import { Navigation } from "@/components/navigation"
 import { ResidentialHero } from "@/components/residential-hero"
 import { ResidentialServices } from "@/components/residential-services"
 import { ResidentialPricing } from "@/components/residential-pricing"
-import { ResidentialTestimonials } from "@/components/residential-testimonials"
+import { EmergencyCleaning } from "@/components/emergency-cleaning"
+import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Residential Pool Cleaning Services - Sparks Pool Services",
+  title: "Residential Pool Cleaning Services Pinellas County | Weekly & Monthly Pool Maintenance",
   description:
-    "Professional residential pool cleaning and maintenance services. Weekly, bi-weekly, and monthly plans for homeowners. Keep your family pool sparkling clean and safe.",
+    "Professional residential pool cleaning services in Pinellas County, Florida. Weekly, bi-weekly, and monthly pool maintenance plans. Free quotes, licensed & insured. Call today!",
 }
 
 export default function ResidentialPage() {
   return (
-    <main>
+    <main id="main-content">
       <Navigation />
       <ResidentialHero />
       <ResidentialServices />
       <ResidentialPricing />
-      <ResidentialTestimonials />
+      <EmergencyCleaning />
+      <Footer />
     </main>
   )
 }

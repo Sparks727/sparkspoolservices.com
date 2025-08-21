@@ -38,21 +38,13 @@ export function HeroSection() {
             <Droplets className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
+          <div className="flex justify-center px-4">
             <Button
               asChild
               size="lg"
               className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-primary hover:bg-primary/90 w-full sm:w-auto min-h-[48px]"
             >
               <Link href="tel:727-234-4023">Get Free Pool Cleaning Quote</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm w-full sm:w-auto min-h-[48px]"
-            >
-              <Link href="/veteran-owned">Our Story</Link>
             </Button>
           </div>
 

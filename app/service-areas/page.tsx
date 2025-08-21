@@ -52,7 +52,7 @@ const serviceAreas = [
 
 export default function ServiceAreasPage() {
   return (
-    <main>
+    <main id="main-content">
       <Navigation />
             <div className="min-h-screen bg-gradient-to-br from-primary/5 to-white">
         {/* Hero Section */}

@@ -1,15 +1,15 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Check, Star } from "lucide-react"
+import { Check, Star, Building2 } from "lucide-react"
 import Link from "next/link"
 
-export function ResidentialPricing() {
+export function CommercialPricing() {
   const plans = [
     {
       name: "One Time Clean",
       description: "Perfect for special events or immediate pool issues",
-      price: "$150",
+      price: "$200",
       period: "one time",
       popular: false,
       features: [
@@ -19,12 +19,13 @@ export function ResidentialPricing() {
         "Equipment inspection",
         "Chemical adjustments included",
         "Detailed service report",
+        "Emergency response available",
       ],
     },
     {
       name: "Bi-Weekly Clean",
       description: "Twice a month cleaning service",
-      price: "$200",
+      price: "$300",
       period: "per month",
       popular: true,
       features: [
@@ -34,14 +35,17 @@ export function ResidentialPricing() {
         "Equipment inspection",
         "Chemical adjustments included",
         "Detailed service report",
+        "Extended equipment checks",
         "Algae prevention treatment",
         "Tile line cleaning",
+        "Priority emergency response",
+        "Compliance reporting",
       ],
     },
     {
       name: "Monthly Service",
       description: "Weekly cleanings throughout the month",
-      price: "$400",
+      price: "$500",
       period: "per month",
       popular: false,
       features: [
@@ -51,6 +55,7 @@ export function ResidentialPricing() {
         "Chemical rebalancing",
         "Minor repair identification",
         "Maintenance recommendations",
+        "24/7 emergency support",
         "Extended equipment checks",
         "Seasonal maintenance reminders",
       ],
@@ -63,11 +68,10 @@ export function ResidentialPricing() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-serif font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
-            Transparent Pricing for Every Family
+            Commercial Pool Service Pricing
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            No hidden fees, no surprises. Choose the service frequency that works best for your family's pool usage and
-            budget.
+            Flexible service options designed for commercial facilities. Choose the frequency that matches your operational needs and budget.
           </p>
         </div>
 
@@ -86,6 +90,9 @@ export function ResidentialPricing() {
               )}
 
               <CardHeader className="text-center pb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="h-6 w-6 text-primary" />
+                </div>
                 <CardTitle className="font-serif text-2xl text-gray-900">{plan.name}</CardTitle>
                 <CardDescription className="text-base">{plan.description}</CardDescription>
                 <div className="mt-4">
@@ -109,7 +116,7 @@ export function ResidentialPricing() {
                   className={`w-full ${plan.popular ? "bg-primary hover:bg-primary/90" : ""}`}
                   variant={plan.popular ? "default" : "outline"}
                 >
-                  <Link href="/contact">Get Started</Link>
+                  <Link href="/contact">Request Proposal</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -118,12 +125,12 @@ export function ResidentialPricing() {
 
         {/* Bottom CTA */}
         <div className="text-center bg-white rounded-2xl p-8 shadow-md">
-          <h3 className="font-serif text-2xl text-gray-900 mb-4">Need a Custom Plan?</h3>
+          <h3 className="font-serif text-2xl text-gray-900 mb-4">Need a Custom Commercial Plan?</h3>
           <p className="text-muted-foreground mb-6">
-            Every pool is unique. We'll create a maintenance plan that fits your specific needs and budget.
+            Every commercial facility is unique. We'll create a maintenance plan that fits your specific operational needs and budget.
           </p>
           <Button asChild size="lg" variant="outline">
-            <Link href="/contact">Request Custom Quote</Link>
+            <Link href="/contact">Schedule Consultation</Link>
           </Button>
         </div>
       </div>

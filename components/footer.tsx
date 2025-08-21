@@ -9,13 +9,10 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div 
-                className="h-8 w-8 bg-cover bg-center"
-                style={{
-                  backgroundImage: 'url(/favicon-filled.svg)',
-                  backgroundSize: 'contain',
-                  backgroundRepeat: 'no-repeat'
-                }}
+              <img 
+                src="/logo1.webp"
+                alt="Sparks Pool Services Logo"
+                className="h-8 w-8 object-contain"
               />
               <div>
                 <h3 className="font-serif font-bold text-xl">Sparks Pool Services</h3>

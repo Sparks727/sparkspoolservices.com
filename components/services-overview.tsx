@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Home, Building2, Sparkles, ArrowRight } from "lucide-react"
+import { Home, Building2, Sparkles, ArrowRight, Phone, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export function ServicesOverview() {
@@ -78,11 +78,68 @@ export function ServicesOverview() {
           })}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center">
-          <p className="text-lg text-muted-foreground mb-6">Serving Largo, Clearwater, Seminole, Pinellas Park, St. Petersburg, and Indian Rocks Beach. Not sure which service you need? We're here to help.</p>
-          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
-            <Link href="/contact">Get Free Pool Cleaning Quote</Link>
+        {/* Service Areas Section */}
+        <div className="text-center mb-12">
+          <h3 className="font-serif text-2xl font-bold text-gray-900 mb-4">Serving Pinellas County Communities</h3>
+          <p className="text-lg text-muted-foreground mb-8">Professional pool cleaning services throughout Pinellas County, Florida</p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+            <Button asChild variant="outline" className="h-12 text-sm">
+              <Link href="/service-areas/largo">Largo</Link>
+            </Button>
+            <Button asChild variant="outline" className="h-12 text-sm">
+              <Link href="/service-areas/clearwater">Clearwater</Link>
+            </Button>
+            <Button asChild variant="outline" className="h-12 text-sm">
+              <Link href="/service-areas/seminole">Seminole</Link>
+            </Button>
+            <Button asChild variant="outline" className="h-12 text-sm">
+              <Link href="/service-areas/pinellas-park">Pinellas Park</Link>
+            </Button>
+            <Button asChild variant="outline" className="h-12 text-sm">
+              <Link href="/service-areas/st-petersburg">St. Petersburg</Link>
+            </Button>
+            <Button asChild variant="outline" className="h-12 text-sm">
+              <Link href="/service-areas/indian-rocks-beach">Indian Rocks Beach</Link>
+            </Button>
+          </div>
+        </div>
+
+        {/* Emergency Cleaning Section */}
+        <div className="text-center bg-primary text-white rounded-2xl p-8">
+          <div className="flex justify-center mb-6">
+            <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+              <Phone className="h-8 w-8 text-white" />
+            </div>
+          </div>
+          
+          <h3 className="font-serif text-2xl font-bold mb-4">
+            Emergency Cleaning
+          </h3>
+          
+          <p className="text-lg mb-6 opacity-90">
+            Need immediate pool cleaning? We provide emergency pool services for urgent situations. 
+            Don't let pool problems ruin your day - call us today for fast, reliable service.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+            <div className="flex items-center space-x-2 text-white/80">
+              <Clock className="h-5 w-5" />
+              <span>24/7 Emergency Response</span>
+            </div>
+            <div className="flex items-center space-x-2 text-white/80">
+              <Shield className="h-5 w-5" />
+              <span>Licensed & Insured</span>
+            </div>
+          </div>
+          
+          <Button
+            asChild
+            size="lg"
+            variant="secondary"
+            className="text-lg px-8 py-6 bg-white text-primary hover:bg-gray-100"
+          >
+            <Link href="tel:727-234-4023">Call Today</Link>
           </Button>
         </div>
       </div>

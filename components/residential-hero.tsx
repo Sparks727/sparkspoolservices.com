@@ -15,9 +15,9 @@ export function ResidentialHero() {
               Residential Services
             </Badge>
 
-            <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
-              Make Every Swim <span className="text-primary">Sparkle</span>
-            </h1>
+                                <h1 className="font-serif font-bold text-4xl sm:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
+                      Professional <span className="text-primary">Residential Pool Cleaning</span> Services
+                    </h1>
 
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Your family deserves a crystal-clear, safe pool every day. Our residential pool cleaning services bring
@@ -29,7 +29,7 @@ export function ResidentialHero() {
                 <Link href="/contact">Get Free Quote</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
-                <Link href="#services">View Services</Link>
+                <Link href="#pricing">See Pricing</Link>
               </Button>
             </div>
 
@@ -50,7 +50,7 @@ export function ResidentialHero() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/backyard-pool-family.png"
+                src="/residential.webp"
                 alt="Beautiful residential pool with family enjoying clean water"
                 className="w-full h-full object-cover"
               />

@@ -1,6 +1,6 @@
 import { Brush, Droplets, Sparkles, TestTube } from "lucide-react"
 
-export function ScrubCleaningProcess() {
+export function ScrubCleaningServices() {
   const steps = [
     {
       icon: TestTube,
@@ -17,7 +17,7 @@ export function ScrubCleaningProcess() {
       icon: Brush,
       title: "Professional Scrub Gear & Scuba Cleaning",
       description:
-        "Our technicians don professional scrub gear and scuba equipment to access every surface of your pool. This hands-on approach ensures we reach areas that automated systems miss, providing the most thorough cleaning possible.",
+        "Our technicians use professional scrub gear and scuba equipment to access every surface of your pool. This hands-on approach ensures we reach areas that automated systems miss, providing the most thorough cleaning possible.",
     },
     {
       icon: Sparkles,
@@ -30,7 +30,7 @@ export function ScrubCleaningProcess() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-4">Our Detailed 4-Step Scrub Process</h2>
+          <h2 className="text-4xl font-serif font-bold text-slate-900 mb-4">Professional Scrub Cleaning Services</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-sans">
             The most comprehensive pool cleaning method available. Our technicians use professional scrub gear and scuba equipment to ensure every inch of your pool receives attention.
           </p>
